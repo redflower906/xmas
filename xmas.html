@@ -19,9 +19,16 @@
       margin: 0 auto;
       padding: 1em 0;
     }
+    .red {
+      color: firebrick;
+    }
+    .green {
+      color: forestgreen!important;
+    }
 
     #HH {
       font-family: 'Mountains of Christmas';
+      color: firebrick;
       font-size: 50px;
       display: block;
       text-align: center;
@@ -56,12 +63,15 @@
         $('#multi').css('display', 'block');
       });
     });
+    setInterval(function() {
+      $('.red').toggleClass('green');
+    }, 2000);
   </script>
 </head>
 
 <body>
   <div class='container'>
-    <div id='HH'>
+    <div id='HH' class='red'>
       Happy Holidays!
     </div>
     <div id='x1'>
