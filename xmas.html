@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <title>Christmas</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Mountains+of+Christmas:700);
+    body {
+      background-color: LightSkyBlue;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 50%;
+      max-width: 960px;
+      text-align: center;
+    }
+
+    .xt {
+      margin: 0 auto;
+      padding: 1em 0;
+    }
+
+    #HH {
+      font-family: 'Mountains of Christmas';
+      font-size: 50px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    #thx {
+      font-size: 20px;
+      display: block;
+      width: 500px;
+      margin: 0 auto;
+      padding-top: 1em;
+    }
+  </style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type='text/javascript'>
+    $(document).ready(function() {
+      $('#blueb').on('click', function() {
+        $('.xt').css('display', 'none');
+        $('#blue').css('display', 'block');
+      });
+      $('#redb').on('click', function() {
+        $('.xt').css('display', 'none');
+        $('#red').css('display', 'block');
+      });
+      $('#whiteb').on('click', function() {
+        $('.xt').css('display', 'none');
+        $('#white').css('display', 'block');
+      });
+      $('#multib').on('click', function() {
+        $('.xt').css('display', 'none');
+        $('#multi').css('display', 'block');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class='container'>
+    <div id='HH'>
+      Happy Holidays!
+    </div>
+    <div id='x1'>
+      <img id='xmasTree' class="xt" src="xmastreer.png">
+    </div>
+    <div id='x2'>
+      <img id='blue' class="xt" style='display:none;' src='xmastreeb.png'>
+    </div>
+    <div id='x3'>
+      <img id='red' class="xt" style='display:none;' src='xmastreer.png'>
+    </div>
+    <div id='x4'>
+      <img id='white' class="xt" style='display:none;' src='xmastreew.png'>
+    </div>
+    <div id='x5'>
+      <img id='multi' class="xt" style='display:none;' src='xmastreem.png'>
+    </div>
+
+    <input type='button' id='blueb' value='Make me blue!'>
+    <input type='button' id='redb' value='Make me red!'>
+    <input type='button' id='whiteb' value='Make me white!'>
+    <input type='button' id='multib' value='Make me multicolored!'>
+    <div id='thx'>
+      Charlotte, thanks so much for spending your time and energy teaching us how to code and be awesome nerds! I hope you have a wonderful holiday season, I promise I won't slack off just because it's vacation time!
+    </div>
+  </div>
+</body>
+
+</html>
